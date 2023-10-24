@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!---FONTS Rajdhani-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
+          rel="stylesheet"
+        />
+    <!----NEONDERTHAW FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap"
+      rel="stylesheet"
+    />
+     <!--Sansita+Swashed-->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap"
+       rel="stylesheet"
+     />
+
+    <link rel="stylesheet" href="account.css" />
+  </head>
+  <body>
+      <!----https://fantacydesigns.com/product-page-in-html-and-css/#-->
+      <!---MICROBIT SECTION-->
+    <div class="product-card">
+        <div class="welcome"><img class="logo-pic" src="house-logo.png"/> Welcome To Your Account!</a></div>
+        <p> Hello! This is your central power button</p>
+        <p> To log out, press the logo to the right</p>
+        <br>
+        <p> Green: Turn On </p>
+        <p> Red: Turn Off </p>
+        <!--The buttons and colors section-->
+        <div class="product-pic"></div>
+        <div class="product-colors">
+         <!---TURN ON BUTTON-->
+         <span
+         onclick="turnOn()"
+            class="green active"
+            data-color="#75cb6a"
+            data-pic="url(greenbutton.png)"
+            alt="Green Power button symbol icon">
+         <!--TURN OFF BUTTON-->
+          </span>
+          <span onclick="turnOff()" class="red" data-color="#4d1919" data-pic="url(redbutton.png)" alt="red Power button symbol icon"></span>
+        </div>
+        <!---LOG OUT BUTTON-->
+        <div class="product-info">
+            <a onclick="leave()" href="index.html"
+              ><img class="product-button" src="house-logo.png"/></a
+            >
+          </div>
+      </div>
+<!---The changing of background and colors-->
+    <script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+charset="utf-8"
+></script>
+    <script>
+        $(".product-colors span").click(function () {
+        $(".product-colors span").removeClass("active");
+        $(this).addClass("active");
+        $("body").css("background", $(this).attr("data-color"));
+        $(".product-price").css("color", $(this).attr("data-color"));
+        $(".product-button").css("color", $(this).attr("data-color"));
+        $(".product-pic").css("background-image", $(this).attr("data-pic"));
+      });
+    </script>
+</html>
+<!-- LOG OUT ALERT-->
+<script>
+    function leave() {
+        alert("Logging Out!");
+      }
+  </script>
+  
+<!--CONNECTING TO FIREBASE-->
+<script src="https://www.gstatic.com/firebasejs/8.4.0/firebase.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyA8C93_VdW6T8DW5ojwRy82berXRZbqpDc",
+    authDomain: "lc-login-84432.firebaseapp.com",
+    databaseURL:
+      "https://lc-login-84432-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "lc-login-84432",
+    storageBucket: "lc-login-84432.appspot.com",
+    messagingSenderId: "850051871249",
+    appId: "1:850051871249:web:e182925a10f7cae77bb7b0",
+    measurementId: "G-31RQ2R1CJV"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+</script>
+<!--LED STATUS-->
+<script>
+  var myDBConn1 = firebase.database().ref("/ledstatus");
+
+  function turnOn() {
+    myDBConn1.update({
+      status: 1
+    });
+    alert("LED is On");
+  }
+  function turnOff() {
+    myDBConn1.update({
+      status: 0
+    });
+    alert("LED is Off");
+  }
+</script>

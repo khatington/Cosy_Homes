@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-6" />
+    <!--<title> Login and Registration Form in HTML & CSS | CodingLab </title>-->
+    <link rel="stylesheet" href="login.css" />
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---Neonderthaw font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap"
+      rel="stylesheet"
+    />
+    <!----Pacifio Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+     <!--Sansita+Swashed-->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap"
+       rel="stylesheet"
+     />
+  </head>
+  <body>
+      <!----https://www.codinglabweb.com/2021/06/login-and-registration-form-in-html-css.html--> 
+           <!---THE LINKS / NAVIGATION BAR-->
+           <span>
+              <div class="container20">
+                <div class="links">
+                  <a class="logo"> <img class="logo-pic" src="house-logo.png" />Cozy Homes</a>
+                  <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <a href="index.html" > Home</a>
+                  <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <a href="contact.html">  Contacts </a>
+                  <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <a href="products.html"> Products</a>
+                  <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <a href="login.html" class="move" >Login </a>
+                </div>
+              </div>
+            </span>
+
+      <!--THE WHOLE LOGIN AND SIGN UP SECTION-->
+      <div class="container">
+        <input type="checkbox" id="flip" />
+        <div class="cover">
+          <div class="front">
+            <img class="backImg" src="slogan.png" alt="" />
+            <div class="text"></div>
+          </div>
+          <div class="back">
+            <img class="backImg" src="slogan.png" alt="" />
+          </div>
+        </div>
+        <div class="forms">
+          <div class="form-content">
+            <!-- THE LOGIN FORM -->
+            <div class="login-form">
+              <div class="title">Login</div>
+              <!--Email-->
+              <div class="input-boxes">
+                <div class="input-box">
+                  <i class="fas fa-envelope"></i>
+                  <input
+                    id="username"
+                    type="text"
+                    placeholder="Enter your email or Username"
+                    name="uname"
+                    required
+                  />
+                </div>
+                <!--Password-->
+                <div class="input-box">
+                  <i class="fas fa-lock"></i>
+                  <input
+                    id="password"
+                    type="password"
+                    placeholder="Enter your password"
+                    name="uname"
+                    required
+                  />
+                </div>
+                <!---Forget Password text-->
+                <div class="text"><a href="#">Forgot password?</a></div>
+                <!---Submit button-->
+                <div class="button input-box">
+                  <button onclick="checkData()">Submit</button>
+                </div>
+                <!---Sign up Text-->
+                <div class="text sign-up-text">
+                  Don't have an account? <label for="flip">Sigup now</label>
+                </div>
+              </div>
+            </div>
+            <!----THE SIGN UP FORM -->
+            <div class="signup-form">
+              <div class="title">Signup</div>
+              <br></br>
+              <p>(For display only, doesn't work)</p>
+              <p></p>
+              <div class="input-boxes">
+                <div class="input-box">
+                  <i class="fas fa-user"></i>
+                  <input type="text" placeholder="Enter your name" required />
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-envelope"></i>
+                  <input type="text" placeholder="Enter your email" required />
+                </div>
+                <div class="input-box">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" placeholder="Enter your password" required />
+                </div>
+                <div class="button input-box">
+                  <!---Submit button-->
+                  <input type="submit" value="Submit" />
+                </div>
+                <div class="text sign-up-text">
+                  Already have an account? <label for="flip">Login now</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
+
+<!--ASSIGNED USERNAME AND PASSWORD-->
+    <script>
+      function checkData() {
+        var user = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+        var log = false;
+        if (user == 123 && pass == "world") {
+          console.log("Test");
+          log = true;
+          alert("Login Successful!");
+          location.href = "account.html";
+        } else {
+          alert("Invalid Details. Please Try Again!");
+        }
+      }
+    </script>
+  </body>
+</html>

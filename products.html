@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!---Fonts LOBSTER-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <!--RAJDHANI-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
+      rel="stylesheet"
+    />
+    <!--NEONDARTHAW-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap"
+      rel="stylesheet"
+    />
+    <!--SANSITA SWASHED-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="products.css" />
+    <title>Products</title>
+  </head>
+  <body>
+        <!---- https://fantacydesigns.com/product-page-in-html-and-css/#  --->
+      <!-- The start of product page design --->
+    <div class="product-card">
+      <h1>Programmable Touchscreen Thermostat Products
+      </h1>
+      <p>(For Dsiplay Only)</p>
+<br></br>
+        <p>Here are some of our best products known to be accessible and easy to use according to customers.
+        They can be easily adjusted to achieve your ideal optimal temperature, by just a tap on the screen. 
+      </p>
+      <br></br>
+      <div class="product-pic"></div>
+      <div class="product-colors">
+         <!---Fist image to appear-->
+        <span
+          class="blue active"
+          data-color="#5f5a48"
+          alt=" Squared Based Digital Thermostat"
+          data-pic="url(thermo1.png)"
+        ></span>
+        <span class="green" data-color="#cbb26a" alt=" Circular Based Digital Thermostat" data-pic="url(thermo2.png)"></span>
+        <span class="yellow" data-color="#4d1919" alt=" Circular Based Digital Thermostat" data-pic="url(thermo3.png)"></span>
+        <span class="rose" data-color="#2e2d2d" alt=" Squared Based Digital Thermostat" data-pic="url(thermo4.png)"></span>
+      </div>
+          <!--Price and Button-->
+      <div class="product-info">
+        <div class="product-price">€200-€450</div>
+        <a href="#" class="product-button">Add to Cart</a>
+      </div>
+    </div>
+<!---The changing of background and colors-->
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+charset="utf-8"
+></script>
+    <script>
+        $(".product-colors span").click(function () {
+        $(".product-colors span").removeClass("active");
+        $(this).addClass("active");
+        $("body").css("background", $(this).attr("data-color"));
+        $(".product-price").css("color", $(this).attr("data-color"));
+        $(".product-button").css("color", $(this).attr("data-color"));
+        $(".product-pic").css("background-image", $(this).attr("data-pic"));
+      });
+    </script>
+
+ <!---THE LINKS / NAVIGATION BAR-->
+ <span>
+  <div class="container">
+    <div class="links">
+      <a class="logo"> <img class="logo-pic" src="house-logo.png" />Cozy Homes</a>
+      <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <a href="index.html" > Home</a>
+      <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <a href="contact.html">  Contacts </a>
+      <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <a href="products.html"> Products</a>
+      <span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <a href="login.html" class="move" >Login </a>
+    </div>
+  </div>
+</span>
+  </body>
+</html>

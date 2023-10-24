@@ -1,0 +1,152 @@
+/* Welcome and Logo */
+.welcome {
+  -webkit-text-fill-color: #330104;
+  font-family: "Sansita Swashed", cursive;
+  position: relative;
+  text-align: left;
+  font-weight: bold;
+  font-size: 2em;
+  height: 15%;
+  top: -10%;
+}
+
+.logo-pic {
+  position: relative;
+  top: 30%;
+  width: 150px;
+}
+
+/* https://fantacydesigns.com/product-page-in-html-and-css/# */
+/* The start of product page design */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #75cb6a;
+  transition: 0.6s linear;
+}
+
+/* Container Itself */
+.product-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 1200px;
+  height: 700px;
+  background: #f2f2f2;
+  padding: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+/* Product Description */
+.product-card p {
+  font-weight: bold;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  color: rgb(53, 52, 52);
+}
+
+/* Picture */
+.product-pic {
+  background-image: url(greenbutton.png);
+  position: relative;
+  width: 40%;
+  height: 350px;
+  left: 30%;
+  background-size: cover;
+  background-position: center;
+  transition: 0.6s linear;
+}
+
+/* Price and Button placement */
+.product-colors {
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+/* The shape of the dots itself */
+.product-colors span {
+  width: 20px;
+  height: 21px;
+  margin: 0 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.green {
+  width: 500px;
+  height: 500px;
+  background: #75cb6a;
+}
+.red {
+  background: #4d1919;
+}
+/* Price and Button corresponding to background */
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+/* ADD TO CART BUTTON */
+.product-button {
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  color: #75cb6a;
+  text-decoration: none;
+  border: 2px solid;
+  padding: 8px 24px;
+  border-radius: 20px;
+  transition: 0.4s linear;
+  font-size: 40px;
+}
+
+.product-button:hover {
+  transform: scale(1.06);
+}
+
+/* SLIDER SECTION */
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04aa6d; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04aa6d; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}

@@ -1,0 +1,190 @@
+body {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+}
+
+/*Logo section*/
+.logo {
+  -webkit-text-fill-color: #330104;
+  font-family: "Neonderthaw", cursive;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.logo-pic {
+  width: 8%;
+  max-width: 200px;
+  margin-right: auto;
+}
+
+/* Everything in the DIV links*/
+/* links section */
+.links a:link {
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: none;
+  opacity: 50%;
+}
+
+.links a:visited {
+  -webkit-text-fill-color: #cbb26a;
+}
+
+.links {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 250%;
+  text-align: left;
+}
+
+/* Moving Login */
+.move {
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: black;
+  position: relative;
+  left: 10%;
+  font-weight: bold;
+  font-size: 130%;
+}
+
+.container {
+  background: #f1ecec;
+  box-shadow: 0 5px 10px grey;
+  width: 100%;
+}
+
+/* https://fantacydesigns.com/product-page-in-html-and-css/# */
+/* The start of product page design */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #5f5a48;
+  transition: 0.6s linear;
+}
+
+/* Container Itself */
+.product-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 1200px;
+  height: 700px;
+  background: #f2f2f2;
+  padding: 40px;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+/* Product Name */
+.product-card h1 {
+  font-size: 30px;
+  margin-bottom: 4px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bold;
+}
+
+/* Product Description */
+.product-card p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  color: rgb(53, 52, 52);
+  font-weight: bold;
+}
+
+/* Picture */
+.product-pic {
+  background-image: url(thermo1.png);
+  position: relative;
+  width: 60%;
+  height: 350px;
+  left: 20%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 5px 10px grey;
+  transition: 0.6s linear;
+}
+
+/* Price and Button placement */
+.product-colors {
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+/* The shape of the dots itself */
+.product-colors span {
+  width: 20px;
+  height: 21px;
+  margin: 0 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.blue {
+  width: 500px;
+  height: 500px;
+  background: #5f5a48;
+}
+.green {
+  background: #cbb26a;
+}
+.yellow {
+  background: #4d1919;
+}
+.rose {
+  background: #2e2d2d;
+}
+
+/* Border of the dots */
+.product-colors .active:after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  position: absolute;
+  border-radius: 50%;
+  box-sizing: border-box;
+  left: -2px;
+  top: -2px;
+}
+
+/* Price and Button corresponding to background */
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+/* PRICE */
+.product-price {
+  position: relative;
+  top: -90px;
+  font-weight: bold;
+  color: #5f5a48;
+  font-size: 50px;
+}
+
+/* Add TO CART BUTTON */
+.product-button {
+  position: relative;
+  top: -90px;
+  margin-left: auto;
+  color: #5f5a48;
+  text-decoration: none;
+  border: 2px solid;
+  padding: 8px 24px;
+  border-radius: 20px;
+  transition: 0.4s linear;
+  font-size: 40px;
+}
+
+.product-button:hover {
+  transform: scale(1.06);
+}
