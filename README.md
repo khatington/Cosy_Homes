@@ -1,4 +1,4 @@
-## Cosy Homes 🏠
+# Cosy Homes 🏠
 Leaving Cert. project for Computer Science. <br/>
 Theme: Smart home systems. <br/>
 
