@@ -1,6 +1,7 @@
 # Cosy Homes 🏠
 Leaving Cert. project for Computer Science. <br/>
 Theme: Smart home systems. <br/>
+Built using [CodeSandbox](https://codesandbox.io/p/github/khatington/LC_Project). 
 
 ### Criteria 
 - Create a comapny website that sells 'smart home products' with a user account connected to a database ,`Firebase`. 
