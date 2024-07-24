@@ -3,15 +3,15 @@ Leaving Cert. project for Computer Science. <br/>
 Theme: Smart home systems. <br/>
 
 ### Criteria 
-- Create a comapny website that sells 'smart home products' with a functioning user account connected to database (Firebase). 
-- Create a physical prototype demonstrating the smart product using Micro:bits.
-- Achieve connection between user account and interaction with Micro:bits, demonstrating simultaneous updates occuring in database.
+- Create a comapny website that sells 'smart home products' with a user account connected to a database ,`Firebase`. 
+- Create a physical prototype using embedded systems, `Micro:Bits`. 
+- Achieve connection between user account and interaction with embedded system, shown through the real-time updates occurring in the database. 
 
 ### The project
-Focused on the idea of smart heating systems using motion sensors to avoid over consumption of electricity and gas within the house. Instead of turning on the heating of the entire house, why not implement motions sensors that trigger the heating system in only occupied rooms. Including a feature where if the room meets the optimal temperature, set up by the user manually, then the system turns off. The user account also enables the user to manually turn off and on the system. 
+Focused on the idea of smart heating systems using motion sensors to avoid over consumption of electricity and gas within the house. Instead of turning on the heating of the entire house, why not implement motions sensors that trigger the heating system in only occupied rooms. Including a feature where if the room meets the optimal temperature, set up by the user manually, then the system turns off. The user account also enables the user to manually turn off or on the system. 
 
 - `Cosy homes`: the company website which includes details of the company, the location, the products and the user login. `index.html` is the home page of this website. 
-- `Micro:Bit_Program.js`: the functionality for the Micro:Bit, PIR sensors and LEDs.
+- `Micro:Bit_Program.js`: the functionality for the `Micro:Bit`, PIR sensors and LEDs.
 - `tester LED.py`: the code to establish connection between user account and `Firebase`.
 
 ## Images provided below 🖼️
