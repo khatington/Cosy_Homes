@@ -47,7 +47,8 @@ Focused on the idea of smart heating systems using motion sensors to avoid over 
   </p>
 </p>
 
-> Note: This project was done in 2022, therefore the database in Firebase is deactivated and unfortunately I don't have any references provided.
+> [!NOTE]
+> This project was done in 2022, therefore the database in Firebase is deactivated and unfortunately I don't have any references provided.
 
 
 
