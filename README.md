@@ -41,11 +41,20 @@ Focused on the idea of smart heating systems using motion sensors to avoid over 
   </p>
 </p>
 
-### Architecture Diagram and Test case
+### Architecture and Wireframe Diagram
 <p float="left">
   <p align="center">
   <img src="images/architecture.png" width="350"> 
-  <img src="images/test.png" width="350">
+    <img src="images/wireframe.png" width="350"> 
   </p>
 </p>
+
+## User Test Cases
+<p float="left">
+  <p align="center">
+    <img src="images/test.png" width="350">
+  </p>
+</p>
+
+
 
